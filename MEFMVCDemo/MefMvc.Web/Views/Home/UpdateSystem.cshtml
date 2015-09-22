@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "UpdateSystem";
+}
+
+<h2>上传新组件</h2>
+@using (Html.BeginForm("UpdateSystem", "Home", FormMethod.Post, new {enctype = "multipart/form-data", ng_app = "" }))
+{
+    <div>
+        <label>上传新的组件:</label> <input type="file" name="plugin" />
+        <p>
+            <input type="submit" value="上传" />
+        </p>
+    </div>
+}
